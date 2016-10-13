@@ -70,6 +70,9 @@ class closerspet:
 	async def washing(self, context):
 		await self.bot.send_file(context.message.channel, '{}washing.PNG'.format(self.base))
 		
+	@commands.command(pass_context=True, aliases=[])
+	async def sehaok(self, context):
+		await self.bot.send_file(context.message.channel, '{}sehaok.png'.format(self.base))
 	
 def setup(bot):
 	n = closerspet(bot)
